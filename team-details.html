@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+<style type="text/css">.form-style-7 {
+    max-width: 400px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 2px;
+    padding: 20px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-7 h1 {
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0px 0px 20px 0px;
+    color: #5C5C5C;
+    font-size: x-large;
+}
+.form-style-7 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.form-style-7 li {
+    display: block;
+    padding: 9px;
+    border: 1px solid #DDDDDD;
+    margin-bottom: 30px;
+    border-radius: 3px;
+}
+.form-style-7 li:last-child {
+    border: none;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.form-style-7 li>label {
+    display: block;
+    float: left;
+    margin-top: -19px;
+    background: #FFFFFF;
+    height: 14px;
+    padding: 2px 5px 2px 5px;
+    color: #B9B9B9;
+    font-size: 14px;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form-style-7 input[type="text"],
+.form-style-7 input[type="date"],
+.form-style-7 input[type="datetime"],
+.form-style-7 input[type="email"],
+.form-style-7 input[type="number"],
+.form-style-7 input[type="search"],
+.form-style-7 input[type="time"],
+.form-style-7 input[type="url"],
+.form-style-7 input[type="password"],
+.form-style-7 textarea,
+.form-style-7 select {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    display: block;
+    outline: none;
+    border: none;
+    height: 25px;
+    line-height: 25px;
+    font-size: 16px;
+    padding: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-7 input[type="text"]:focus,
+.form-style-7 input[type="date"]:focus,
+.form-style-7 input[type="datetime"]:focus,
+.form-style-7 input[type="email"]:focus,
+.form-style-7 input[type="number"]:focus,
+.form-style-7 input[type="search"]:focus,
+.form-style-7 input[type="time"]:focus,
+.form-style-7 input[type="url"]:focus,
+.form-style-7 input[type="password"]:focus,
+.form-style-7 textarea:focus,
+.form-style-7 select:focus {}
+.form-style-7 li>span {
+    background: #F3F3F3;
+    display: block;
+    padding: 3px;
+    margin: 0 -9px -9px -9px;
+    text-align: center;
+    color: #C0C0C0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+.form-style-7 textarea {
+    resize: none;
+}
+.form-style-7 input[type="submit"],
+.form-style-7 input[type="button"] {
+    background: #2471FF;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-bottom: 3px solid #5994FF;
+    border-radius: 3px;
+    color: #D2E2FF;
+}
+.form-style-7 input[type="submit"]:hover,
+.form-style-7 input[type="button"]:hover {
+    background: #6B9FFF;
+    color: #fff;
+}
+</style>
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<form class="form-style-7">
+    <ul>
+        <li>
+            <label for="name">Team Name</label>
+            <input type="text" name="name" maxlength="100">
+            <span>Enter team name</span>
+        </li>
+        <li>
+            <label for="email">Team DL</label>
+            <input type="email" name="email" maxlength="100">
+            <span>Enter DL your team is part of</span>
+        </li>
+        <li>
+            <label for="tags">Workstream Tags</label>
+            <input type="text" name="tags" maxlength="100">
+            <span>Your workstream tags (separated by ,)</span>
+        </li>
+
+        <li>
+            <label for="inwork" style=" ">Work Input</label>
+            <br />
+            <table style="float: left" border="1" >
+                <tr>
+                    <td>
+                        <h3>
+                            S. No.
+                        </h3>
+                    </td>
+                    <td>
+                        <h3>
+                            Team
+                        </h3>
+                    </td>
+                    <td>
+                        <h3>
+                            DL
+                        </h3>
+                    </td>
+                    <td>
+                        <h3>
+                            Workstream Tags
+                        </h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1>
+                            1.
+                        </h1>
+                    </td>
+                    <td>
+                        <input type="text" name="name" maxlength="100">
+
+                    </td>
+                    <td>
+                        <input type="email" name="email" maxlength="100">
+
+                    </td>
+                    <td>
+                        <input type="text" name="tags" maxlength="100">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1>
+                            2.
+                        </h1>
+                    </td>
+                    <td>
+                        <input type="text" name="name" maxlength="100">
+
+                    </td>
+                    <td>
+                        <input type="email" name="email" maxlength="100">
+
+                    </td>
+                    <td>
+                        <input type="text" name="tags" maxlength="100">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1>
+                            3.
+                        </h1>
+                    </td>
+                    <td>
+                        <input type="text" name="name" maxlength="100">
+
+                    </td>
+                    <td>
+                        <input type="email" name="email" maxlength="100">
+
+                    </td>
+                    <td>
+                        <input type="text" name="tags" maxlength="100">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1>
+                            4.
+                        </h1>
+                    </td>
+                    <td>
+                        <input type="text" name="name" maxlength="100">
+
+                    </td>
+                    <td>
+                        <input type="email" name="email" maxlength="100">
+
+                    </td>
+                    <td>
+                        <input type="text" name="tags" maxlength="100">
+
+                    </td>
+                </tr>
+            </table>
+
+
+
+            <span>Different Teams You Take work from</span>
+        </li>
+        <li>
+            <label for="outwork" style=" ">Work Output</label>
+            <br />
+            <table style="float: left" border="1">
+                <tr>
+                    <td>
+                        <h3>
+                            S. No.
+                        </h3>
+                    </td>
+                    <td>
+                        <h3>
+                            Team
+                        </h3>
+                    </td>
+                    <td>
+                        <h3>
+                            DL
+                        </h3>
+                    </td>
+                    <td>
+                        <h3>
+                            Workstream Tags
+                        </h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1>
+                            1.
+                        </h1>
+                    </td>
+                    <td>
+                        <input type="text" name="name" maxlength="100">
+
+                    </td>
+                    <td>
+                        <input type="email" name="email" maxlength="100">
+
+                    </td>
+                    <td>
+                        <input type="text" name="tags" maxlength="100">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1>
+                            2.
+                        </h1>
+                    </td>
+                    <td>
+                        <input type="text" name="name" maxlength="100">
+
+                    </td>
+                    <td>
+                        <input type="email" name="email" maxlength="100">
+
+                    </td>
+                    <td>
+                        <input type="text" name="tags" maxlength="100">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1>
+                            3.
+                        </h1>
+                    </td>
+                    <td>
+                        <input type="text" name="name" maxlength="100">
+
+                    </td>
+                    <td>
+                        <input type="email" name="email" maxlength="100">
+
+                    </td>
+                    <td>
+                        <input type="text" name="tags" maxlength="100">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1>
+                            4.
+                        </h1>
+                    </td>
+                    <td>
+                        <input type="text" name="name" maxlength="100">
+
+                    </td>
+                    <td>
+                        <input type="email" name="email" maxlength="100">
+
+                    </td>
+                    <td>
+                        <input type="text" name="tags" maxlength="100" >
+
+                    </td>
+                </tr>
+            </table>
+            <span>Different Teams You Send Work To</span>
+        </li>
+
+        <!--<li>
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" name="company" form="my_form" />
+                        <button type="button" form="my_form">ok</button>
+                    </td>
+                    <td>
+                        <input type="text" name="company" form="my_form" />
+                        <button type="button" form="my_form">ok</button>
+                    </td>
+                    <td>
+                        <input type="text" name="company" form="my_form" />
+                        <button type="button" form="my_form">ok</button>
+                    </td>
+                </tr>
+            </table>
+        </li>-->
+        <li>
+            <input type="submit" value="Send This">
+        </li>
+    </ul>
+</form>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+</script>
+</body>
+</html>
