@@ -130,22 +130,27 @@
 <![endif]-->
 
 <!-- Add your site or application content here -->
-<form class="form-style-7">
+<form class="form-style-7" action = "http://192.168.1.126:5000/teamregister" method="post">
     <ul>
         <li>
             <label for="name">Team Name</label>
-            <input type="text" name="name" maxlength="100">
+            <input type="text" name="teamname" maxlength="100">
             <span>Enter team name</span>
         </li>
         <li>
             <label for="email">Team DL</label>
-            <input type="email" name="email" maxlength="100">
+            <input type="email" name="teamdl" maxlength="100">
             <span>Enter DL your team is part of</span>
         </li>
         <li>
             <label for="tags">Workstream Tags</label>
             <input type="text" name="tags" maxlength="100">
             <span>Your workstream tags (separated by ,)</span>
+        </li>
+        <li>
+            <label for="description">Description</label>
+            <input type="text" name="description" maxlength="100">
+            <span>Your Team Description</span>
         </li>
 
         <li>
@@ -181,15 +186,15 @@
                         </h1>
                     </td>
                     <td>
-                        <input type="text" name="name" maxlength="100">
+                        <input type="text" name="fromteam1" maxlength="100">
 
                     </td>
                     <td>
-                        <input type="email" name="email" maxlength="100">
+                        <input type="email" name="fromdl1" maxlength="100">
 
                     </td>
                     <td>
-                        <input type="text" name="tags" maxlength="100">
+                        <input type="text" name="fromteamtag1" maxlength="100">
 
                     </td>
                 </tr>
@@ -200,15 +205,15 @@
                         </h1>
                     </td>
                     <td>
-                        <input type="text" name="name" maxlength="100">
+                        <input type="text" name="fromteam2" maxlength="100">
 
                     </td>
                     <td>
-                        <input type="email" name="email" maxlength="100">
+                        <input type="email" name="fromdl2" maxlength="100">
 
                     </td>
                     <td>
-                        <input type="text" name="tags" maxlength="100">
+                        <input type="text" name="fromteamtag2" maxlength="100">
 
                     </td>
                 </tr>
@@ -219,15 +224,15 @@
                         </h1>
                     </td>
                     <td>
-                        <input type="text" name="name" maxlength="100">
+                        <input type="text" name="fromteam3" maxlength="100">
 
                     </td>
                     <td>
-                        <input type="email" name="email" maxlength="100">
+                        <input type="email" name="fromdl3" maxlength="100">
 
                     </td>
                     <td>
-                        <input type="text" name="tags" maxlength="100">
+                        <input type="text" name="fromteamtag3" maxlength="100">
 
                     </td>
                 </tr>
@@ -238,15 +243,15 @@
                         </h1>
                     </td>
                     <td>
-                        <input type="text" name="name" maxlength="100">
+                        <input type="text" name="fromteam4" maxlength="100">
 
                     </td>
                     <td>
-                        <input type="email" name="email" maxlength="100">
+                        <input type="email" name="fromdl4" maxlength="100">
 
                     </td>
                     <td>
-                        <input type="text" name="tags" maxlength="100">
+                        <input type="text" name="fromteamtag4" maxlength="100">
 
                     </td>
                 </tr>
@@ -289,15 +294,15 @@
                         </h1>
                     </td>
                     <td>
-                        <input type="text" name="name" maxlength="100">
+                        <input type="text" name="toteam1" maxlength="100">
 
                     </td>
                     <td>
-                        <input type="email" name="email" maxlength="100">
+                        <input type="email" name="todl1" maxlength="100">
 
                     </td>
                     <td>
-                        <input type="text" name="tags" maxlength="100">
+                        <input type="text" name="toteamtag1" maxlength="100">
 
                     </td>
                 </tr>
@@ -308,15 +313,15 @@
                         </h1>
                     </td>
                     <td>
-                        <input type="text" name="name" maxlength="100">
+                        <input type="text" name="toteam2" maxlength="100">
 
                     </td>
                     <td>
-                        <input type="email" name="email" maxlength="100">
+                        <input type="email" name="todl2" maxlength="100">
 
                     </td>
                     <td>
-                        <input type="text" name="tags" maxlength="100">
+                        <input type="text" name="toteamtag2" maxlength="100">
 
                     </td>
                 </tr>
@@ -327,15 +332,15 @@
                         </h1>
                     </td>
                     <td>
-                        <input type="text" name="name" maxlength="100">
+                        <input type="text" name="toteam3" maxlength="100">
 
                     </td>
                     <td>
-                        <input type="email" name="email" maxlength="100">
+                        <input type="email" name="todl3" maxlength="100">
 
                     </td>
                     <td>
-                        <input type="text" name="tags" maxlength="100">
+                        <input type="text" name="toteamtag3" maxlength="100">
 
                     </td>
                 </tr>
@@ -346,18 +351,17 @@
                         </h1>
                     </td>
                     <td>
-                        <input type="text" name="name" maxlength="100">
+                        <input type="text" name="toteam4" maxlength="100">
 
                     </td>
                     <td>
-                        <input type="email" name="email" maxlength="100">
+                        <input type="email" name="todl4" maxlength="100">
 
                     </td>
                     <td>
-                        <input type="text" name="tags" maxlength="100" >
+                        <input type="text" name="toteamtag4" maxlength="100">
 
                     </td>
-                </tr>
             </table>
             <span>Different Teams You Send Work To</span>
         </li>
